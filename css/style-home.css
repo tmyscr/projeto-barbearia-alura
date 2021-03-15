@@ -1,0 +1,247 @@
+p, li, a {
+    line-height: 1.2em;
+    letter-spacing: .1em;
+}
+
+.banner {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.titulo {
+    text-align: center;
+    font-size: 2em; 
+    margin: 0 0 1em;
+    clear: left;
+    color: #f0ac25;
+    font-weight: bold;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    line-height: 1.2em;
+}
+
+/* .titulo::before {
+    content: "[ ";
+}
+
+.titulo::after {
+    content: " ]";
+} */
+.principal {
+    background: #0a0a0a;
+    color: #FEFEFE;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    flex-wrap: wrap;
+}
+
+/* .principal::after, .principal::before {
+    content:'';
+    display: block;
+    border-bottom: 1px solid white;
+    padding-top: .5rem;
+    width: 90%;
+    margin: 0 auto;
+} */
+
+.utensilios {
+    width: 20%;
+    border-radius: 50%;
+    position: relative;
+    left: 50px;
+}
+
+.texto {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.principal p:not(.principal p:last-child) {
+    margin: 0 0 4em 0;
+}
+
+#missao {
+    font-weight: bold;
+    font-size: 1em;
+    text-align: center;
+}
+
+.mapa {
+    background-color: #0a0a0a;
+    color: #FEFEFE;
+}
+
+.mapa .titulo {
+    font-size: 3em;
+    /* padding: 50px 0 0 0; */
+}
+
+.mapa .titulo::before, .mapa .titulo::after {
+    content: '';
+    background: currentColor;
+    width: 10%;
+    height: 3px;
+    display: inline-block;
+    position: relative;
+    bottom: 15px;
+    margin: 0 30px;
+    opacity: .5;
+}
+
+.mapa p {
+    margin: 0 0 2em;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+.mapa-conteudo {
+    /* width: 940px; */
+    width: 70%;
+    margin: 0 auto;
+    padding: 4em 0;
+}
+
+.beneficios {
+    background-color: #FEFEFE;
+    color: #0a0a0a;
+    padding: 3em 0;
+}
+
+.beneficios .titulo {
+    font-size: 3em;
+}
+
+.beneficios .titulo::before, .beneficios .titulo::after {
+    content: '';
+    background: currentColor;
+    width: 27%;
+    height: 3px;
+    display: inline-block;
+    position: relative;
+    bottom: 15px;
+    margin: 0 30px;
+    opacity: .5;
+}
+
+.conteudo-beneficios {
+    width: 640px;
+    margin: 0 auto;
+}
+
+.lista-beneficios {
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.itens {
+    line-height: 1.5;
+}
+
+.itens:first-child {
+    font-weight: bold;
+}
+
+.itens:before {
+    content: "🟊";
+}
+
+.imagem-beneficios {
+    width: 60%;
+    opacity: 1;
+    transition: 400ms;
+    box-shadow: 10px 10px 10px #000000; 
+}
+
+.imagem-beneficios:hover {
+    opacity: 0.3;
+}
+
+.video {
+   width: 560px;
+   margin: 2em auto; 
+}
+
+@media screen and (max-width: 480px) {
+    
+    .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video {
+        width: auto;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    /*Alterações pessoais*/ 
+    .img-logo {
+        width: 30%;
+    }
+
+    .menu-principal {
+        width: 100%;
+        margin: auto;
+    }
+
+    .item-menu {
+        font-size: 1em;
+        margin: 0 15px;
+    }
+
+    .principal {
+        padding: 1em;
+    }
+
+    .titulo-principal {
+        font-size: 1.3em;
+    }
+
+    p {
+        font-size: 0.8em;
+    }
+
+    .utensilios {
+        width: 80px;
+        margin: 0 10px 0 10px;
+    }
+
+    .principal p {
+        margin: 0 1em 1em 1em; 
+        text-align: justify;
+    }
+
+    .mapa {
+        padding: 0;
+    }
+
+    .beneficios {
+        padding: 1em;
+    }
+
+    .lista-beneficios {
+        vertical-align: initial;
+        width: 80%;
+        margin-left: 2em;
+
+    }
+
+    .imagem-beneficios {
+        width: 100%;
+        margin-top: 1em;
+    }
+
+    nav {
+        position: static;
+    }
+
+    /*.lista-beneficios, .imagem-beneficios {
+        width: 100%;
+    }*/
+
+}

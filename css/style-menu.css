@@ -1,0 +1,60 @@
+body {
+    font-family: 'Shippori Mincho B1', sans-serif;
+    line-height: 0;
+}
+
+.caixa {
+    background-color: #FEFEFE;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; 
+    padding: 10px 50px;  
+    box-sizing: border-box;  
+}
+
+.img-logo {
+    width: 70%;
+    cursor: pointer;
+}
+
+nav li {
+    display: inline;
+    margin: 0 0 0 45px;
+}
+
+nav a {
+    text-transform: lowercase;
+    color: #0a0a0a;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+    margin-right: 60px;
+}
+
+nav a:hover {
+    color: #f0ac25;
+}
+
+.img-logo-rodape {
+    width: 150px;
+}
+
+footer {
+    text-align: center;
+    /* background: url("../img/bg.jpg"); */
+    background-color: #0a0a0a;
+    padding: 40px 0;
+}
+
+.copyright {
+    color: #0c0a0a;
+    font-size: 13px;
+    margin: 20px 0 0;
+}
+
+
+
+
+
+    
