@@ -8,6 +8,7 @@ p, li, a {
     height: 600px;
     object-fit: cover;
     object-position: center;
+    margin: 5px 0;
 }
 
 .titulo {
@@ -66,44 +67,10 @@ p, li, a {
     text-align: center;
 }
 
-.mapa {
-    background-color: #0a0a0a;
-    color: #FEFEFE;
-}
-
-.mapa .titulo {
-    font-size: 3em;
-}
-
-.mapa .titulo::before, .mapa .titulo::after {
-    content: '';
-    background: currentColor;
-    width: 10%;
-    height: 1px;
-    display: inline-block;
-    position: relative;
-    bottom: 15px;
-    margin: 0 30px;
-    opacity: 1;
-}
-
-.mapa p {
-    margin: 0 0 2em;
-    text-align: center;
-    font-size: 1.1em;
-}
-
-.mapa-conteudo {
-    width: 70%;
-    margin: 0 auto;
-    padding: 4em 0;
-}
-
 .beneficios {
     background-color: #0a0a0a;
     color: #FEFEFE;
     padding: 3em 0;
-    margin-bottom: 10px;
 }
 
 /* .beneficios::after {
@@ -120,6 +87,7 @@ p, li, a {
 
 .beneficios .titulo {
     font-size: 3em;
+    margin-bottom: 80px;
 }
 
 .beneficios .titulo::before, .beneficios .titulo::after {
@@ -217,6 +185,41 @@ p, li, a {
 
 .itens:hover > img {
     opacity: 1;
+}
+
+.mapa {
+    background-color: #0a0a0a;
+    color: #FEFEFE;
+    padding: 3em 0;
+    margin-bottom: 5px;
+}
+
+.mapa .titulo {
+    font-size: 3em;
+}
+
+.mapa .titulo::before, .mapa .titulo::after {
+    content: '';
+    background: currentColor;
+    width: 10%;
+    height: 1px;
+    display: inline-block;
+    position: relative;
+    bottom: 15px;
+    margin: 0 30px;
+    opacity: 1;
+}
+
+.mapa p {
+    margin: 0 0 2em;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+.mapa-conteudo {
+    width: 70%;
+    margin: 0 auto;
+    padding: 4em 0;
 }
 
 @media screen and (max-width: 480px) {
