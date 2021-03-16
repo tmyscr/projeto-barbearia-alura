@@ -116,6 +116,18 @@ p, li, a {
     padding: 3em 0;
 }
 
+.beneficios::after {
+    content: '';
+    background: #f0ac25;
+    width: 90%;
+    height: 3px;
+    display: block;
+    position: relative;
+    top: 50px;
+    margin: 0 auto;
+    /* opacity: .5; */
+}
+
 .beneficios .titulo {
     font-size: 3em;
 }
@@ -231,10 +243,6 @@ p, li, a {
     transition: 400ms;
     box-shadow: 10px 10px 10px #000000; 
 } */
-
-.imagem-beneficios:hover {
-    opacity: 0.3;
-}
 
 @media screen and (max-width: 480px) {
     

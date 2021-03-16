@@ -1,14 +1,16 @@
 .produtos {
-    width: 940px;
-    margin: 0 auto;
+    /* width: 940px; */
+    width: 100%;
+    /* margin: 0 auto; */
     padding: 50px 0;
+    display: flex;
+    justify-content: center;
 }
 
 .produtos li {
-    display: inline-block;
-    text-align: center;
-    width: 30%;
-    vertical-align: top;
+    /* display: inline-block; */
+    /* text-align: center; */
+    width: 20%;
     margin: 0 1.5%;
     padding: 30px 20px; 
     box-sizing: border-box;
@@ -31,16 +33,23 @@
 .produtos h2 {
     font-size: 30px;
     font-weight: bold;
+    text-align: center;
+}
+
+.produtos img {
+    margin: 10px;
 }
 
 .produto-descricao {
     font-size: 18px;
+    text-align: center;
 }
 
 .produto-preco {
     font-size: 22px;
     font-weight: bold;
     margin-top: 10px;
+    text-align: center;
 }
 
 @media screen and (max-width: 480px) {
