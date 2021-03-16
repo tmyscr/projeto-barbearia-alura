@@ -22,13 +22,6 @@ p, li, a {
     line-height: 1.2em;
 }
 
-/* .titulo::before {
-    content: "[ ";
-}
-
-.titulo::after {
-    content: " ]";
-} */
 .principal {
     background: #0a0a0a;
     color: #FEFEFE;
@@ -80,19 +73,18 @@ p, li, a {
 
 .mapa .titulo {
     font-size: 3em;
-    /* padding: 50px 0 0 0; */
 }
 
 .mapa .titulo::before, .mapa .titulo::after {
     content: '';
     background: currentColor;
     width: 10%;
-    height: 3px;
+    height: 1px;
     display: inline-block;
     position: relative;
     bottom: 15px;
     margin: 0 30px;
-    opacity: .5;
+    opacity: 1;
 }
 
 .mapa p {
@@ -102,31 +94,29 @@ p, li, a {
 }
 
 .mapa-conteudo {
-    /* width: 940px; */
     width: 70%;
     margin: 0 auto;
     padding: 4em 0;
 }
 
 .beneficios {
-    /* background-color: #FEFEFE;
-    color: #0a0a0a; */
     background-color: #0a0a0a;
     color: #FEFEFE;
     padding: 3em 0;
+    margin-bottom: 10px;
 }
 
-.beneficios::after {
+/* .beneficios::after {
     content: '';
     background: #f0ac25;
     width: 90%;
-    height: 3px;
+    height: 1px;
     display: block;
     position: relative;
     top: 50px;
     margin: 0 auto;
-    /* opacity: .5; */
-}
+    opacity: 0.5;
+} */
 
 .beneficios .titulo {
     font-size: 3em;
@@ -136,12 +126,12 @@ p, li, a {
     content: '';
     background: currentColor;
     width: 27%;
-    height: 3px;
+    height: 1px;
     display: inline-block;
     position: relative;
     bottom: 15px;
     margin: 0 30px;
-    opacity: .5;
+    opacity: 1;
 }
 
 .conteudo-beneficios {
@@ -174,16 +164,12 @@ p, li, a {
 }
 
 .video {
-    /* width: 560px; */
     width: 100%;
-    /* margin: 2em auto;  */
     grid-area: video;
  } 
 
 .lista-beneficios {
     width: 100%;
-    /* display: inline-block; */
-    /* vertical-align: top; */
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 1fr);
@@ -196,9 +182,9 @@ p, li, a {
 }
 .itens {
     position: relative;
-    /* width: 300px; */
     height: 200px;
     background-color: #0a0a0a;
+    border: 1px solid rgba(250, 172, 37, 0.7);
 }
 
 .itens p {
@@ -218,7 +204,11 @@ p, li, a {
     object-fit: cover;
     opacity: 0.3;
     transition: 400ms;
-    /* border-radius: 50%; */
+}
+
+.itens:hover {
+    border: none;
+    outline: none;
 }
 
 .itens:hover > p {
@@ -228,21 +218,6 @@ p, li, a {
 .itens:hover > img {
     opacity: 1;
 }
-
-/* .itens:first-child {
-    font-weight: bold;
-} */
-
-/* .itens:before {
-    content: "🟊";
-} */
-
-/* .imagem-beneficios {
-    width: 60%;
-    opacity: 1;
-    transition: 400ms;
-    box-shadow: 10px 10px 10px #000000; 
-} */
 
 @media screen and (max-width: 480px) {
     
@@ -254,7 +229,6 @@ p, li, a {
         text-align: center;
     }
 
-    /*Alterações pessoais*/ 
     .img-logo {
         width: 30%;
     }
