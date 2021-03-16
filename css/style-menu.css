@@ -4,7 +4,7 @@ body {
 }
 
 .caixa {
-    background-color: #FEFEFE;
+    background-color: #0a0a0a;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -25,7 +25,7 @@ nav li {
 
 nav a {
     text-transform: lowercase;
-    color: #0a0a0a;
+    color: #FEFEFE;
     font-weight: bold;
     font-size: 22px;
     text-decoration: none;

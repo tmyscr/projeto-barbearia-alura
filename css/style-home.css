@@ -109,8 +109,10 @@ p, li, a {
 }
 
 .beneficios {
-    background-color: #FEFEFE;
-    color: #0a0a0a;
+    /* background-color: #FEFEFE;
+    color: #0a0a0a; */
+    background-color: #0a0a0a;
+    color: #FEFEFE;
     padding: 3em 0;
 }
 
@@ -131,42 +133,107 @@ p, li, a {
 }
 
 .conteudo-beneficios {
-    width: 640px;
+    width: 85%;
     margin: 0 auto;
 }
 
+.itens:nth-child(1) {
+    grid-area: foto1;
+}
+
+.itens:nth-child(2) {
+    grid-area: foto2;
+}
+
+.itens:nth-child(3) {
+    grid-area: foto3;
+}
+
+.itens:nth-child(4) {
+    grid-area: foto4;
+}
+
+.itens:nth-child(5) {
+    grid-area: foto5;
+}
+
+.itens:nth-child(6) {
+    grid-area: foto6;
+}
+
+.video {
+    /* width: 560px; */
+    width: 100%;
+    /* margin: 2em auto;  */
+    grid-area: video;
+ } 
+
 .lista-beneficios {
-    width: 40%;
-    display: inline-block;
-    vertical-align: top;
+    width: 100%;
+    /* display: inline-block; */
+    /* vertical-align: top; */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+        "foto1 video video video"
+        "foto2 video video video"
+        "foto3 foto4 foto5 foto6"
+    ;
+    gap: 10px
 }
-
 .itens {
-    line-height: 1.5;
+    position: relative;
+    /* width: 300px; */
+    height: 200px;
+    background-color: #0a0a0a;
 }
 
-.itens:first-child {
+.itens p {
+    position: absolute;
+    color: #f0ac25;
+    bottom: 50%;
+    left: 50%;    
+    transform: translate(-50%,  50%);
+    font-size: 1.3em;
     font-weight: bold;
+    transition: 400ms;
 }
 
-.itens:before {
+.itens img {
+    width: 100%;
+    height: inherit;
+    object-fit: cover;
+    opacity: 0.3;
+    transition: 400ms;
+    /* border-radius: 50%; */
+}
+
+.itens:hover > p {
+    opacity: 0;
+}
+
+.itens:hover > img {
+    opacity: 1;
+}
+
+/* .itens:first-child {
+    font-weight: bold;
+} */
+
+/* .itens:before {
     content: "🟊";
-}
+} */
 
-.imagem-beneficios {
+/* .imagem-beneficios {
     width: 60%;
     opacity: 1;
     transition: 400ms;
     box-shadow: 10px 10px 10px #000000; 
-}
+} */
 
 .imagem-beneficios:hover {
     opacity: 0.3;
-}
-
-.video {
-   width: 560px;
-   margin: 2em auto; 
 }
 
 @media screen and (max-width: 480px) {
