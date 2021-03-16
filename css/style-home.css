@@ -8,7 +8,7 @@ p, li, a {
     height: 600px;
     object-fit: cover;
     object-position: center;
-    margin: 5px 0;
+    margin: 1px 0;
 }
 
 .titulo {
@@ -164,6 +164,7 @@ p, li, a {
     font-size: 1.3em;
     font-weight: bold;
     transition: 400ms;
+    z-index: 2;
 }
 
 .itens img {
@@ -176,7 +177,6 @@ p, li, a {
 
 .itens:hover {
     border: none;
-    outline: none;
 }
 
 .itens:hover > p {
@@ -191,7 +191,7 @@ p, li, a {
     background-color: #0a0a0a;
     color: #FEFEFE;
     padding: 3em 0;
-    margin-bottom: 5px;
+    margin-bottom: 1px;
 }
 
 .mapa .titulo {
@@ -223,77 +223,88 @@ p, li, a {
 }
 
 @media screen and (max-width: 700px) {
-    
-    .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video {
+
+    main {
         width: auto;
     }
 
-    h1 {
-        text-align: center;
-    }
-
-    .img-logo {
-        width: 30%;
-    }
-
-    .menu-principal {
-        width: 100%;
-        margin: auto;
-    }
-
-    .item-menu {
-        font-size: 1em;
-        margin: 0 15px;
-    }
-
     .principal {
-        padding: 1em;
-    }
-
-    .titulo-principal {
-        font-size: 1.3em;
-    }
-
-    p {
-        font-size: 0.8em;
+        flex-direction: column;
+        height: auto;
     }
 
     .utensilios {
-        width: 80px;
-        margin: 0 10px 0 10px;
-    }
-
-    .principal p {
-        margin: 0 1em 1em 1em; 
-        text-align: justify;
-    }
-
-    .mapa {
-        padding: 0;
-    }
-
-    .beneficios {
-        padding: 1em;
-    }
-
-    .lista-beneficios {
-        vertical-align: initial;
-        width: 80%;
-        margin-left: 2em;
-
-    }
-
-    .imagem-beneficios {
-        width: 100%;
-        margin-top: 1em;
-    }
-
-    nav {
+        width: 20%;
         position: static;
+        margin: 30px 0;
     }
 
-    /*.lista-beneficios, .imagem-beneficios {
-        width: 100%;
-    }*/
+    .titulo {
+        font-size: 1.3em; 
+    }
 
+    .texto {
+        width: 80%;
+        font-size: .8em;
+        text-align: center;
+    }
+
+    .beneficios .titulo {
+        font-size: 1.4em;
+        margin: 40px;
+    }
+
+    .beneficios .titulo::before, .beneficios .titulo::after {
+        display: none;
+    }
+    
+    .lista-beneficios {
+       display: flex;
+       flex-direction: column;
+    }
+
+    .itens {
+        height: 80px;
+        margin-bottom: 10px;
+    }
+    
+    .itens p {
+        font-size: 1em;
+        font-weight: 400;
+        text-align: center;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;    
+        transform: translate(0, 0);
+        background-color: rgba(0, 0, 0, .8);
+    }
+    
+    .itens img {
+        opacity: 1;
+        object-position: top;
+    }  
+    
+    .itens:hover > p, .itens:hover > img, .itens:hover {
+        opacity: 1;
+        pointer-events: none;
+    }
+    
+    .mapa .titulo {
+        font-size: 1.4em;
+    }
+
+    .mapa .titulo::before, .mapa .titulo::after {
+        display: none;
+    }
+    
+    .mapa p {
+        margin: 0;
+        font-size: .8em;
+    }
+
+    .mapa-conteudo {
+        width: 90%;
+        padding: 2em 0;
+    }
 }
