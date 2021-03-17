@@ -36,15 +36,6 @@ p, li, a {
     padding: 3em 0;
 }
 
-/* .principal::after, .principal::before {
-    content:'';
-    display: block;
-    border-bottom: 1px solid white;
-    padding-top: .5rem;
-    width: 90%;
-    margin: 0 auto;
-} */
-
 .utensilios {
     width: 20%;
     border-radius: 50%;
@@ -90,19 +81,6 @@ p, li, a {
     margin: 0 30px;
     opacity: 1;
 }
-
-/* 
-.beneficios .titulo::before, .beneficios .titulo::after {
-    content: '';
-    background: currentColor;
-    width: 27%;
-    height: 1px;
-    display: inline-block;
-    position: relative;
-    bottom: 15px;
-    margin: 0 30px;
-    opacity: 1;
-} */
 
 .conteudo-beneficios {
     width: 85%;
@@ -211,18 +189,6 @@ p, li, a {
     margin: 0 30px;
     opacity: 1;
 }
-
-/* .mapa .titulo::before, .mapa .titulo::after {
-    content: '';
-    background: currentColor;
-    width: 10%;
-    height: 1px;
-    display: inline-block;
-    position: relative;
-    bottom: 15px;
-    margin: 0 30px;
-    opacity: 1;
-} */
 
 .mapa p {
     margin: 0 0 2em;
