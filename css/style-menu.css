@@ -53,19 +53,15 @@ footer {
     color: #FEFEFE;
 }
 
-@media screen and (max-width: 960px) {
 
-  .img-logo-rodape {
-      width: 30%;
-  }
+@media (min-width: 701px)  and (max-width: 1200px) {
+    nav a {
+        margin-right: 10px;
+    }
 
-  .copyright {
-    font-size: .7em;
-  }
-
+    nav li {
+        margin-left: 10px;
+    }
 }
-
-
-
 
     
