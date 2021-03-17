@@ -50,6 +50,7 @@ fieldset label {
 
 .checkbox {
   margin: 40px 0;
+  line-height: 1.4em;
 }
 
 .enviar {
@@ -73,8 +74,8 @@ fieldset label {
 .tabela-horarios {
   margin: 20px 20px;
   position: absolute;
-  top: 80px;
-  right: 80px;
+  top: 10%;
+  right: 10%;
 }
 
 .tabela-horarios h3 {
@@ -82,13 +83,12 @@ fieldset label {
   font-size: 1.5em;
   margin: 40px 0;
   color: #555555;
+  font-weight: bold;
 }
 
 table {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 380px;
+  position: relative;
+  width: 100%;
 }
 
 thead {
@@ -99,7 +99,8 @@ thead {
 
 td, th {
   border: 1px solid #000000;
-  padding: 15px 55px;
+  padding: 1em 2em;
+  text-align: center;
 }
 
 @media screen and (max-width: 700px) {
@@ -122,10 +123,6 @@ td, th {
   .horario-contato select {
     width: 100%;
   } 
-
-  .checkbox {
-    line-height: 1.4em;
-  }
   
   .enviar {
     width: 100%;
@@ -143,8 +140,6 @@ td, th {
   .tabela-horarios h3 {
     margin: 50px 0 30px 0;
     font-size: 1.2em;
-    font-weight: bold;
-    text-align: center;
   }
 
   table {
@@ -157,6 +152,38 @@ td, th {
   td, th {
     border: 1px solid #000000;
     padding: 15px 25px;
-    text-align: center;
   }
+}
+
+@media (min-width: 701px)  and (max-width: 1200px) {
+  .principal-contato {
+    width: auto;
+    margin: 0 2em;
+    padding: 0;
+  }
+
+  .horario-contato select {
+    width: 30%;
+  }
+
+  .enviar {
+    width: 100%;
+  }
+  
+  .tabela-horarios {
+    right: 10%;
+    margin: 0      
+  }
+
+  .tabela-horarios h3 {
+    font-size: 1.2em;
+    text-align: center;
+    color: #555555;
+  }
+  
+  td, th {
+    border: 1px solid #000000;
+    padding: .6em 1em;
+  }
+  
 }

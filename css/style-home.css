@@ -167,7 +167,6 @@ p, li, a {
     font-weight: bold;
     transition: 400ms;
     z-index: 2;
-    font-size: 90%;
 }
 
 .itens img {
