@@ -31,8 +31,9 @@ p, li, a {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 100vh;
+    height: auto;
     flex-wrap: wrap;
+    padding: 3em 0;
 }
 
 /* .principal::after, .principal::before {
@@ -70,26 +71,27 @@ p, li, a {
 .beneficios {
     background-color: #0a0a0a;
     color: #FEFEFE;
-    padding: 3em 0;
+    padding: 3em 3em;
 }
-
-/* .beneficios::after {
-    content: '';
-    background: #f0ac25;
-    width: 90%;
-    height: 1px;
-    display: block;
-    position: relative;
-    top: 50px;
-    margin: 0 auto;
-    opacity: 0.5;
-} */
 
 .beneficios .titulo {
     font-size: 3em;
     margin-bottom: 80px;
 }
 
+.beneficios .titulo::after {
+    content: '';
+    background: currentColor;
+    width: 55%;
+    height: 1px;
+    display: inline-block;
+    position: relative;
+    bottom: 15px;
+    margin: 0 30px;
+    opacity: 1;
+}
+
+/* 
 .beneficios .titulo::before, .beneficios .titulo::after {
     content: '';
     background: currentColor;
@@ -100,7 +102,7 @@ p, li, a {
     bottom: 15px;
     margin: 0 30px;
     opacity: 1;
-}
+} */
 
 .conteudo-beneficios {
     width: 85%;
@@ -165,7 +167,7 @@ p, li, a {
     font-weight: bold;
     transition: 400ms;
     z-index: 2;
-    font-size: 80%;
+    font-size: 90%;
 }
 
 .itens img {
@@ -191,7 +193,7 @@ p, li, a {
 .mapa {
     background-color: #0a0a0a;
     color: #FEFEFE;
-    padding: 3em 0;
+    padding: 3em 3em;
     margin-bottom: 1px;
 }
 
@@ -199,7 +201,19 @@ p, li, a {
     font-size: 3em;
 }
 
-.mapa .titulo::before, .mapa .titulo::after {
+.mapa .titulo::after {
+    content: '';
+    background: currentColor;
+    width: 25%;
+    height: 1px;
+    display: inline-block;
+    position: relative;
+    bottom: 15px;
+    margin: 0 30px;
+    opacity: 1;
+}
+
+/* .mapa .titulo::before, .mapa .titulo::after {
     content: '';
     background: currentColor;
     width: 10%;
@@ -209,7 +223,7 @@ p, li, a {
     bottom: 15px;
     margin: 0 30px;
     opacity: 1;
-}
+} */
 
 .mapa p {
     margin: 0 0 2em;
@@ -254,10 +268,6 @@ p, li, a {
         font-size: 1.4em;
         margin: 40px;
     }
-
-    .beneficios .titulo::before, .beneficios .titulo::after {
-        display: none;
-    }
     
     .lista-beneficios {
        display: flex;
@@ -293,10 +303,6 @@ p, li, a {
     
     .mapa .titulo {
         font-size: 1.4em;
-    }
-
-    .mapa .titulo::before, .mapa .titulo::after {
-        display: none;
     }
     
     .mapa p {
